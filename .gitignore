@@ -1,0 +1,14 @@
+# CMake
+build/
+compile_commands.json
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Compiled files
+*.o
+*.out
