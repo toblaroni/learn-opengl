@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
 
-
 project(point_cloud_viewer)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -12,6 +11,11 @@ find_package(glfw3 REQUIRED)
 
 add_executable(point_cloud_viewer
     src/main.cpp
+    include/shader.h
+)
+
+target_include_directories(point_cloud_viewer PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 target_compile_definitions(point_cloud_viewer
